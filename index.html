@@ -1,13 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <meta http-equiv="refresh" content="0; url=https://t.me/+MfSzjAjSuEFlODIx">
-    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE, NO-STORE, MUST-REVALIDATE">
-    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
-    <META HTTP-EQUIV="EXPIRES" CONTENT="0">
-    <title>Redirecionando...</title>
+    <!-- Anti-Cache: Garante que se você trocar o link no futuro, o celular vai buscar a versão nova -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <!-- CONTROLE DE TEMPO: Altere o número "3" para quantos segundos quiser esperar -->
+    <meta http-equiv="refresh" content="3; url=https://t.me/+MfSzjAjSuEFlODIx">
+    
+    <title>Carregando...</title>
+    <style>
+        /* Estilo simples para centralizar a mensagem */
+        body {
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .mensagem {
+            color: #ffffff;
+            font-size: 20px;
+            text-align: center;
+        }
+        .loader {
+            border: 3px solid #333333;
+            border-top: 3px solid #ff69b4;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: rodar 1s linear infinite;
+            margin: 15px auto 0;
+        }
+        @keyframes rodar {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-    Carregando link...
+    <!-- MENSAGEM QUE APARECE ENQUANTO CARREGA -->
+    <div class="mensagem">
+        Carregando link...
+        <div class="loader"></div>
+    </div>
 </body>
 </html>
